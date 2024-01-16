@@ -60,6 +60,16 @@ a:focus, a:hover {
   color: #28ABE3;
 }
 
+dialog {
+  width: 80vw;
+  height: 80vh;
+  background-color: #fff;
+  padding: 34px;
+  border: 0;
+  border-radius: 5px;
+  overflow-y: hidden;
+}
+
 .btn-main {
   background: #28ABE3;
   border: 1px solid #28ABE3;

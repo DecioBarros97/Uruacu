@@ -62,7 +62,19 @@ Nav
 			  </a>
 			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 				<li><a class="dropdown-item" href="#inicio">Início</a></li>
-				<li><a class="dropdown-item" href="https://pacs.uruacuclinicadeimagem.com.br/Netpacs-paciente/#/" target="_blank">Buscar Exames</a></li>
+			
+				<li><a class="dropdown-item" href="#" onclick="showNetpacs()"> BUSCAR EXAMES</a>
+			<main>
+			  <dialog id="modal">
+				<iframe
+				  src="https://pacs.uruacuclinicadeimagem.com.br/Netpacs-paciente/#/"
+				 
+				  style="width: 100%; height: 100%"
+				  
+				></iframe>
+			  </dialog>
+			</main>
+				
 			
 				<!-- <li><a class="dropdown-item" href="onepage-text.html">Onepage 2</a></li> -->
 									  
@@ -137,6 +149,7 @@ Nav
 						 precisão diagnóstica  <br> e cuidados de saúde.</p>
 					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"
 						href="service.html">Descobrir</a>
+						
 				</div>
 			</div>
 		</div>
@@ -1175,6 +1188,13 @@ Start Blog Section
 
 <!-- Custom js -->
 <script src="js/script.js"></script>
+
+<script>
+	function showNetpacs() {
+	  const modal = document.querySelector('#modal');
+	  modal.showModal();
+	}
+  </script>
 
 </body>
 
